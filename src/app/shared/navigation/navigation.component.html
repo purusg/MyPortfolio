@@ -18,25 +18,21 @@
     </div>
 
     <nav class="nav-menu">
-      <ul>
-        <li class="active"><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
+      <ul *ngFor="let menuItem of menuItems">
+        <li [class]="menuItem.IsActive ? 'active' : ''">
+          <a [href]="menuItem.Href">
+            <i [class]="menuItem.IconClass"></i> 
+            <span>{{ menuItem.Name }}</span>
+          </a>
+        </li>
+        <!-- <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
         <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
         <li><a href="#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
         <li><a href="#services"><i class="bx bx-server"></i> Services</a></li>
-        <li><a href="#contact"><i class="bx bx-envelope"></i> Contact</a></li>
-
+        <li><a href="#contact"><i class="bx bx-envelope"></i> Contact</a></li> -->
       </ul>
     </nav><!-- .nav-menu -->
-    <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+    <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont icofont-navigation-menu"></i></button>
 
   </div>
 </header><!-- End Header -->
-
-<!-- ======= Hero Section ======= -->
-<section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-  <div class="hero-container" data-aos="fade-in">
-    <h1>Purushothaman</h1>
-    <p>I'm <span class="typed-element"></span></p>
-  </div>
-</section><!-- End Hero -->

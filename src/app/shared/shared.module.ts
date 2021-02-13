@@ -5,11 +5,13 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatIconModule } from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
+import { JoinPipe } from './pipes/join.pipe';
 
 
 @NgModule({
   declarations: [
-    NavigationComponent
+    NavigationComponent,
+    JoinPipe
   ],
   imports: [
     CommonModule,
@@ -19,7 +21,8 @@ import { FormsModule } from '@angular/forms';
     FormsModule
   ],
   exports: [
-    NavigationComponent
+    NavigationComponent,
+    JoinPipe
   ]
 })
 export class SharedModule { }

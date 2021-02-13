@@ -1,0 +1,26 @@
+<!-- ======= Skills Section ======= -->
+<section id="skills" class="skills section-bg">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Role Skills</h2>
+      <p class="quotes">
+        Your talent determines what you can do. Your motivation determines how much you are willing to do. 
+        Your attitude determines how well you do it.
+      <span class="author">-- Lou Holtz</span>
+      </p>
+    </div>
+
+    <div class="row skills-content">
+      <div class="col-lg-6" *ngFor="let item of skills" data-aos="fade-up">
+        <div class="progress-section">
+          <span class="skill">{{ item.Name }} <i class="val">{{ item.Level }}%</i></span>
+          <div class="progress-bar-wrap">
+            <mat-progress-bar class="progress-bar" mode="determinate" [value]="item.Level" bufferValue="100">
+            </mat-progress-bar>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- End Skills Section -->

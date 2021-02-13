@@ -1,0 +1,80 @@
+<!-- ======= About Section ======= -->
+<section id="about" class="about">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>About</h2>
+      <p style="text-align: justify;">
+        Born in a small village in the year 1989 on January 27, pursued lower grade eduction till bachelor's degree 
+        in the same village. Started my early career as a Mathematics instructor in an institute coaching students to clear their
+        National Defense Academy examination. Since childhood I dreamt to get aboard education, 
+        so I moved to England to purse my Master's degree in computer science.  
+      </p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4" data-aos="fade-right">
+        <img src="../../../assets/images/profile-img.jpg" class="img-fluid" alt="">
+      </div>
+      <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+        <h3>Full Stack Developer (.Net)</h3>
+        <p class="font-italic" style="text-align: justify;">
+          An enthusiastic developer having great ideas related to work and life. I am a good team player who always likes to 
+          collaborate with people personally and professionally. 
+        </p>
+        <div class="row">
+          <div class="col-lg-6">
+            <ul>
+              <li><i class="icofont icofont-rounded-right"></i> <strong>Birthday:</strong> 27 January 1989</li>
+              <li><i class="icofont icofont-rounded-right"></i> <strong>Degree:</strong> MSc Computing</li>
+              <li><i class="icofont icofont-rounded-right"></i> <strong>Phone:</strong> +60186689615</li>
+              <li><i class="icofont icofont-rounded-right"></i> <strong>City:</strong> Kuala Lumpur, Malaysia</li>
+              <li><i class="icofont icofont-rounded-right"></i> <strong>Job Status:</strong> Employed, but available</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <ul>
+              <li><i class="icofont icofont-rounded-right"></i> <strong>Age:</strong> {{ myage }}</li>
+              <li><i class="icofont icofont-rounded-right"></i> <strong>WhatsApp:</strong> +918489911477</li>
+              <li><i class="icofont icofont-rounded-right"></i> <strong>Email:</strong> gks27chandru@gmail.com</li>
+              <li><i class="icofont icofont-rounded-right"></i> <strong>Freelance:</strong> Available</li>
+              <li><i class="icofont icofont-rounded-right"></i> <strong>Preferred Location:</strong> Canada, Europe, US</li>
+            </ul>
+          </div>
+        </div>
+        <p style="text-align: justify;">
+          I worked part time as a crew member in McDonald's for my survival in England during my post graduation which gave life
+          experience and confidence that I can survive in an unknown place. On completing my graduation, I returned to my hometown 
+          with a dream of working in a software company. After struggling for an year, I have stepped into a startup company in the 
+          year 2013 which gives me hope that I can be successful in a software industry.     
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section><!-- End About Section -->
+<!-- ======= Facts Section ======= -->
+<section id="facts" class="facts">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Badges</h2>
+      <p class="quotes">
+        “Look at a day when you are supremely satisfied at the end. It's not a day when you lounge around doing nothing; 
+        it's a day you've had everything to do and you've done it.”
+      <span class="author">-- Margaret Thatcher</span>
+      </p>
+    </div>
+    <owl-carousel style="width: 100%;" [options]="SlideOptions" [items]="Images"
+      [carouselClasses]="['owl-theme', 'row', 'sliding']">
+      <div class="row no-gutters" *ngFor="let img of Images">
+        <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch badges-owl-carousel" data-aos="zoom-in-down">
+          <div class="badges">
+            <img class="badges-img" src={{img}} />
+          </div>
+        </div>
+      </div>
+
+    </owl-carousel>
+  </div>
+</section><!-- End Facts Section -->

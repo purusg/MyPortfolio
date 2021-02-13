@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let sticky of data" data-aos="zoom-out-up" data-aos-delay="500">
+    <div class="note">
+      <h2>{{sticky.title}}</h2>
+      <p>{{ sticky.data | join: sticky.delimeter }}</p>
+    </div>
+  </li>
+</ul>

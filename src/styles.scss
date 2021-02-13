@@ -42,12 +42,13 @@ body {
     color: #fff;
     transition: display 0.5s ease-in-out;
     z-index: 99999;
+    cursor: pointer;
   }
   
   .back-to-top i {
     font-size: 24px;
     position: absolute;
-    top: 7px;
+    top: 10px;
     left: 8px;
   }
   
@@ -396,15 +397,15 @@ body {
   /*--------------------------------------------------------------
   # Akills
   --------------------------------------------------------------*/
-  .skills .progress {
+  .skills .progress-section {
     height: 50px;
     display: block;
     background: none;
   }
   
-  .skills .progress .skill {
+  .skills .progress-section .skill {
     padding: 10px 0;
-    margin: 0 0 6px 0;
+    margin: 0 0 -8px 0;
     text-transform: uppercase;
     display: block;
     font-weight: 600;
@@ -412,7 +413,7 @@ body {
     color: #050d18;
   }
   
-  .skills .progress .skill .val {
+  .skills .progress-section .skill .val {
     float: right;
     font-style: normal;
   }
@@ -422,10 +423,8 @@ body {
   }
   
   .skills .progress-bar {
-    width: 1px;
     height: 10px;
     transition: .9s;
-    background-color: #149ddd;
   }
   
   /*--------------------------------------------------------------
@@ -536,7 +535,6 @@ body {
   
   .portfolio .portfolio-wrap::before {
     content: "";
-    background: rgba(255, 255, 255, 0.5);
     position: absolute;
     left: 0;
     right: 0;
@@ -565,11 +563,11 @@ body {
     text-align: center;
     background: rgba(20, 157, 221, 0.75);
     transition: 0.3s;
-    width: 50%;
+    width: 100%;
   }
   
   .portfolio .portfolio-wrap .portfolio-links a:hover {
-    background: rgba(20, 157, 221, 0.95);
+    background: rgb(20, 157, 221, 1);
   }
   
   .portfolio .portfolio-wrap .portfolio-links a + a {
@@ -741,6 +739,7 @@ body {
   --------------------------------------------------------------*/
   .contact {
     padding-bottom: 130px;
+    background: #f5f8fd;
   }
   
   .contact .info {
@@ -752,11 +751,11 @@ body {
   
   .contact .info i {
     font-size: 20px;
-    color: #149ddd;
+    color: #fff;
     float: left;
     width: 44px;
     height: 44px;
-    background: #dff3fc;
+    background: #ff7272;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -803,7 +802,7 @@ body {
   }
   
   .contact .info .social-links a:hover {
-    background: #149ddd;
+    background: #dd5e14;
     color: #fff;
   }
   
@@ -887,7 +886,7 @@ body {
     padding: 10px 12px;
   }
   
-  .contact .php-email-form button[type="submit"] {
+  .contact .php-email-form button[type="button"] {
     background: #149ddd;
     border: 0;
     padding: 10px 24px;
@@ -896,7 +895,7 @@ body {
     border-radius: 4px;
   }
   
-  .contact .php-email-form button[type="submit"]:hover {
+  .contact .php-email-form button[type="button"]:hover {
     background: #37b3ed;
   }
   
@@ -1084,3 +1083,27 @@ body {
     }
   }
   
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.quotes{
+  width: 75% !important;
+  text-align: center;
+  margin: 0 auto !important;
+  position: relative;
+  top: -10px;
+}
+
+.quotes .author{
+  position: relative;
+    top: 20px;
+}
+
+
+input[type="button"]{
+  outline:none;
+}
+input[type="button"]::-moz-focus-inner {
+  border: 0;
+}
